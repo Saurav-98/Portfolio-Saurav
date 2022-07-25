@@ -30,15 +30,15 @@ const Header = () => {
         </Me>
         <ScrollDown href="#contact">Scroll Down</ScrollDown>
         <HeaderSocials>
-          <a href="https://www.linkedin.com">
+          <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">
             <BsLinkedin />
           </a>
 
-          <a href="https://github.com/">
+          <a href="https://github.com/" target="_blank" rel="noreferrer">
             <BsGithub />
           </a>
 
-          <a href="https://twitter.com/">
+          <a href="https://twitter.com/" target="_blank" rel="noreferrer">
             <BsTwitter />
           </a>
         </HeaderSocials>
@@ -50,16 +50,11 @@ const Header = () => {
 export default Header;
 
 const MainHeader = styled.header`
-  height: 100vh;
-  padding: 7rem;
+  height: 105vh;
+  padding-top: 7rem;
   overflow: hidden;
 
   @media screen and (max-width: 1200px) {
-    height: max-content;
-  }
-
-  @media screen and (max-width: 600px) {
-    height: max-content;
   }
 `;
 
@@ -70,9 +65,9 @@ const HeaderContainer = styled.div`
 `;
 
 const CTA = styled.div`
-  margin-top: 2rem;
+  margin-top: 2.5rem;
   display: flex;
-  gap: 1.5rem;
+  gap: 1.2rem;
   justify-content: center;
 `;
 
@@ -80,19 +75,18 @@ const Me = styled.div`
   background: linear-gradient(var(--color-primary), transparent);
   width: 22rem;
   height: 30rem;
-  position: relative;
+  position: absolute;
   left: calc(50% - 11rem);
   border-radius: 12rem 12rem 0 0;
-  overflow: hidden;
-  margin-top: 4rem;
+
+  margin-top: 2rem;
   padding: 5rem 1.5em 1.5rem;
 `;
 
 const ScrollDown = styled.a`
   position: absolute;
-  right: 1rem;
-  bottom: 2rem;
-  letter-spacing: 1.5px;
+  right: -2.3rem;
+  bottom: 5rem;
   font-weight: 300;
   font-size: 0.9rem;
   transform: rotate(90deg);
@@ -105,16 +99,17 @@ const HeaderSocials = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 0.8rem;
   position: absolute;
-  bottom: 2rem;
-  left: 1rem;
+  left: 0;
+  bottom: 3rem;
+
   @media screen and (max-width: 600px) {
     display: none;
   }
 
   a {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 
   &::after {

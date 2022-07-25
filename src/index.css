@@ -127,13 +127,35 @@ img {
   .section {
     margin-top: 6rem;
   }
+  h1 {
+    font-size: 2.5rem;
+  }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 15px;
+  }
   .container {
     width: var(--container-width-ms);
   }
   .section > h2 {
     margin-bottom: 2rem;
+  }
+  h1 {
+    font-size: 2.3rem;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  html {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  a {
+    font-size: 0.8rem;
   }
 }
