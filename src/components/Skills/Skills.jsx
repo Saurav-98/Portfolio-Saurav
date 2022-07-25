@@ -1,8 +1,8 @@
 import React from 'react';
 import './Skills.css';
 
-const Skiils = () => {
-  return <div>Skiils</div>;
+const Skills = () => {
+  return <div>Skills</div>;
 };
 
-export default Skiils;
+export default Skills;
