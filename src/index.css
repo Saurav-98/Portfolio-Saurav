@@ -61,17 +61,18 @@ h1 {
   font-size: 3rem;
 }
 
-.section {
+section {
   margin-top: 8rem;
+  height: 100vh;
 }
 
-.section > h2,
-.section > h5 {
+section > h2,
+section > h5 {
   text-align: center;
   color: var(--color-light);
 }
 
-.section > h2 {
+section > h2 {
   color: var(--color-primary);
   margin-bottom: 3rem;
 }
@@ -120,11 +121,11 @@ img {
 
 /* ======================================= Media Queries =========================== */
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1024px) {
   .container {
     width: var(--container-width-md);
   }
-  .section {
+  section {
     margin-top: 6rem;
   }
   h1 {
@@ -139,7 +140,7 @@ img {
   .container {
     width: var(--container-width-ms);
   }
-  .section > h2 {
+  section > h2 {
     margin-bottom: 2rem;
   }
   h1 {

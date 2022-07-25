@@ -8,6 +8,7 @@ import {
   Portfolio,
   TestiMonials,
   Skills,
+  About,
 } from './components';
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
       <main>
         <Header />
         <Nav />
+        <About />
         <Experience />
         <Skills />
         <Portfolio />

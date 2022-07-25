@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import './Header.css';
 import CV from '../../assets/cv.pdf';
 import ME from '../../assets/me.png';
 
@@ -10,7 +9,7 @@ import { BsTwitter } from 'react-icons/bs';
 
 const Header = () => {
   return (
-    <MainHeader>
+    <MainHeader id="header">
       <HeaderContainer className="container">
         <h5>Hello I'm</h5>
         <h1>Saurav Kumar Verma</h1>
@@ -50,12 +49,11 @@ const Header = () => {
 export default Header;
 
 const MainHeader = styled.header`
-  height: 105vh;
+  height: 100vh;
+  border: 1px solid red;
+  margin: 0 auto;
   padding-top: 7rem;
   overflow: hidden;
-
-  @media screen and (max-width: 1200px) {
-  }
 `;
 
 const HeaderContainer = styled.div`
